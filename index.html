@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BudgetWise | Master Your Finances</title>
+    <style>
+        /* CSS Variables mapped to the provided BudgetWise app screenshot */
+        :root {
+            --bg-base: #101010;
+            --bg-card: #1c1c1c;
+            --text-primary: #ffffff;
+            --text-secondary: #9ca3af;
+            --accent-green: #3e8142;
+            --accent-green-hover: #4a994f;
+            --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-base);
+            color: var(--text-primary);
+            font-family: var(--font-family);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Navigation / Header */
+        header {
+            padding: 24px 5%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 32px;
+            height: 32px;
+            background-color: var(--accent-green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Simple SVG for the line chart inside the logo */
+        .logo-icon svg {
+            width: 18px;
+            height: 18px;
+            stroke: white;
+            stroke-width: 2;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        .logo-text {
+            font-size: 1.25rem;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+
+        /* Main Hero Section */
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 5%;
+            text-align: center;
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 16px;
+            letter-spacing: -1px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            max-width: 500px;
+            margin-bottom: 40px;
+        }
+
+        /* Download Button */
+        .download-btn {
+            background-color: var(--accent-green);
+            color: var(--text-primary);
+            text-decoration: none;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-size: 1.125rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+            box-shadow: 0 4px 20px rgba(62, 129, 66, 0.2);
+        }
+
+        .download-btn:hover {
+            background-color: var(--accent-green-hover);
+            transform: translateY(-2px);
+        }
+
+        .download-btn svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+
+        /* App Mockup UI / Feature Cards */
+        .features-showcase {
+            display: flex;
+            gap: 16px;
+            margin-top: 60px;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 800px;
+        }
+
+        .card {
+            background-color: var(--bg-card);
+            padding: 24px;
+            border-radius: 20px;
+            text-align: left;
+            flex: 1;
+            min-width: 200px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .card-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .card-value {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .value-green { color: #4ade80; }
+        .value-red { color: #f87171; }
+
+        /* Footer */
+        footer {
+            padding: 24px;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 600px) {
+            .features-showcase {
+                flex-direction: column;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <div class="logo-icon">
+                <svg viewBox="0 0 24 24">
+                    <polyline points="3 17 9 11 13 15 21 7"></polyline>
+                    <polyline points="14 7 21 7 21 14"></polyline>
+                </svg>
+            </div>
+            <div class="logo-text">BudgetWise</div>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="hero-title">Track your money.<br>With zero friction.</h1>
+        <p class="hero-subtitle">The simplest way to monitor your earnings, expenses, and net balance directly from your Android device.</p>
+        
+        <!-- Direct Download Link configured here -->
+        <a href="https://www.dropbox.com/scl/fi/l6eamkythbmzj9dp0xglk/budgetwise-debug.apk?rlkey=levfna54rhz8ix5b9kvzpgqgm&st=d1z4bjs4&dl=1https://www.dropbox.com/scl/fi/l6eamkythbmzj9dp0xglk/budgetwise-debug.apk?rlkey=levfna54rhz8ix5b9kvzpgqgm&st=d1z4bjs4&dl=1" class="download-btn" download>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M17.593 3.322c-.3-.31-.705-.486-1.125-.486H7.532c-.42 0-.825.176-1.125.486L2.305 7.425C2.11 7.625 2 7.896 2 8.182V20c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V8.182c0-.286-.11-.557-.305-.757l-4.102-4.103zM7.946 4.836h8.108l2.585 2.586H5.361l2.585-2.586zM20 20H4V9.422h16V20z"/>
+                <path d="M11 14h2v-3h-2zM11 15.5h2v2h-2z"/>
+            </svg>
+            Download for Android
+        </a>
+
+        <div class="features-showcase">
+            <div class="card">
+                <div class="card-label">Total Net Balance</div>
+                <div class="card-value">$0.00</div>
+            </div>
+            <div class="card">
+                <div class="card-label">↑ Earnings</div>
+                <div class="card-value value-green">$0.00</div>
+            </div>
+            <div class="card">
+                <div class="card-label">↓ Expenses</div>
+                <div class="card-value value-red">$0.00</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        &copy; 2026 BudgetWise. All rights reserved.
+    </footer>
+
+</body>
+</html>
