@@ -1,0 +1,6 @@
+{
+  "name": "BudgetWise",
+  "description": "Professional expense and earnings tracker with dynamic categorization, source filters, deep insights, home screen widgets, and secure AES-256 cloud synchronization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

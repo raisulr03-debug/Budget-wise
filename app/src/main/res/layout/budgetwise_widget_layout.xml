@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<relativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/widget_background">
+
+    <imageView
+        android:id="@+id/widget_logo"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_launcher_foreground" />
+
+    <textView
+        android:id="@+id/widget_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/widget_logo"
+        android:layout_alignBottom="@id/widget_logo"
+        android:layout_marginLeft="8dp"
+        android:text="BudgetWise"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="14sp" />
+
+    <textView
+        android:id="@+id/widget_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/widget_logo"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="8dp"
+        android:text="Tap below to log a new expense or eaming instantly."
+        android:textColor="#B0BEC5"
+        android:textSize="11sp" />
+
+    <linearLayout
+        android:id="@+id/widget_btn_container"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/widget_btn_background"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <textView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ Log Transaction"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+    </linearLayout>
+</relativeLayout>
